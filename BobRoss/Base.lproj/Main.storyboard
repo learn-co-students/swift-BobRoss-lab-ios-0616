@@ -3,6 +3,10 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,7 +21,59 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.60332628909999997" green="0.65530478960000005" blue="0.81491315360000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Grass" translatesAutoresizingMaskIntoConstraints="NO" id="EE5-rA-2TV">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="EE5-rA-2TV" secondAttribute="height" multiplier="8:5" id="MpO-z9-dFz"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sun" translatesAutoresizingMaskIntoConstraints="NO" id="AC8-cx-B8i">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="AC8-cx-B8i" secondAttribute="height" multiplier="1:1" id="kdL-eF-Azc"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SmallTree" translatesAutoresizingMaskIntoConstraints="NO" id="44e-t8-tgl">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="44e-t8-tgl" secondAttribute="height" multiplier="139:230" id="Olz-Gc-dWs"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tree" translatesAutoresizingMaskIntoConstraints="NO" id="osn-Ei-KRe">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="osn-Ei-KRe" secondAttribute="height" multiplier="1100:823" id="mA1-eQ-8Gj"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clouds" translatesAutoresizingMaskIntoConstraints="NO" id="zcY-tr-nxx">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zcY-tr-nxx" secondAttribute="height" multiplier="16:9" id="2TV-kb-ils"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KidsPlaying" translatesAutoresizingMaskIntoConstraints="NO" id="9pT-o5-ReL">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9pT-o5-ReL" secondAttribute="height" multiplier="4:3" id="51J-L4-ai9"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.53725490196078429" green="0.52549019607843139" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="44e-t8-tgl" firstAttribute="bottom" secondItem="EE5-rA-2TV" secondAttribute="top" multiplier="1.25" id="0QG-6E-YMD"/>
+                            <constraint firstItem="9pT-o5-ReL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Qg-Z8-C3c"/>
+                            <constraint firstItem="AC8-cx-B8i" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.25" id="ALB-TO-hvj"/>
+                            <constraint firstItem="9pT-o5-ReL" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.65" id="F7u-ZH-7Ot"/>
+                            <constraint firstItem="44e-t8-tgl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Kns-aK-cNv"/>
+                            <constraint firstItem="zcY-tr-nxx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Lk7-nl-ae4"/>
+                            <constraint firstItem="9pT-o5-ReL" firstAttribute="top" secondItem="osn-Ei-KRe" secondAttribute="top" multiplier="1.04" id="aRR-gL-1ga"/>
+                            <constraint firstItem="EE5-rA-2TV" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="bFD-wp-RBm"/>
+                            <constraint firstItem="EE5-rA-2TV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dZJ-dl-ksO"/>
+                            <constraint firstItem="44e-t8-tgl" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.3" id="fy2-fx-aIv"/>
+                            <constraint firstAttribute="trailing" secondItem="osn-Ei-KRe" secondAttribute="trailing" id="gil-rA-3Sl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AC8-cx-B8i" secondAttribute="trailing" constant="-16" id="jyQ-TZ-C4N"/>
+                            <constraint firstItem="zcY-tr-nxx" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="mKE-Hc-dG5"/>
+                            <constraint firstItem="osn-Ei-KRe" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="pSc-Ts-k2j"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EE5-rA-2TV" secondAttribute="bottomMargin" constant="1" id="qhN-sM-pd3"/>
+                            <constraint firstItem="osn-Ei-KRe" firstAttribute="bottom" secondItem="EE5-rA-2TV" secondAttribute="top" multiplier="1.3" id="qmI-Ox-1f2"/>
+                            <constraint firstItem="zcY-tr-nxx" firstAttribute="topMargin" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="uMG-Rm-yhL"/>
+                            <constraint firstItem="AC8-cx-B8i" firstAttribute="topMargin" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="y57-uR-gj7"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -25,4 +81,12 @@
             <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Clouds" width="3109" height="1696"/>
+        <image name="Grass" width="1280" height="800"/>
+        <image name="KidsPlaying" width="2285" height="1826"/>
+        <image name="SmallTree" width="1390" height="2300"/>
+        <image name="Sun" width="432" height="432"/>
+        <image name="Tree" width="1100" height="823"/>
+    </resources>
 </document>
